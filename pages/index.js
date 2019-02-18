@@ -16,10 +16,10 @@ const Index = class extends React.Component {
     this.state = {
       word: getWord()
     }
-    this.speakSpanish = this.speakSpanish.bind(this)
+    this.deployHappiness = this.deployHappiness.bind(this)
   }
 
-  speakSpanish () {
+  deployHappiness () {
     const word = getWord()
     this.setState({ word: word })
   }
@@ -38,7 +38,7 @@ const Index = class extends React.Component {
             {this.state.word}
           </div>
           <p>
-            <button onClick={this.speakSpanish}>Gi meg mer lys!</button>
+            <button onClick={this.deployHappiness}>Gi meg mer lys!</button>
           </p>
           <style jsx global>
             {`
