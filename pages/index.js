@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 import shuffle from 'crypto-shuffle'
+import getRandomFont from 'random-font'
 import words from '../lib/words'
 import intros from '../lib/intros'
-
 function getWord () {
   const wordList = shuffle(words.slice(0))
   const introList = shuffle(intros.slice(0))
@@ -14,14 +14,17 @@ const Index = class extends React.Component {
   constructor () {
     super()
     this.state = {
-      word: getWord()
+      word: getWord(),
+      font: getRandomFont()
+
     }
     this.deployHappiness = this.deployHappiness.bind(this)
   }
 
   deployHappiness () {
     const word = getWord()
-    this.setState({ word: word })
+    const font = getRandomFont()
+    this.setState({ word: word, font: font })
   }
 
   render () {
@@ -50,10 +53,9 @@ const Index = class extends React.Component {
               border-radius: 25px;
             }
             button {
-              font-weight: 500;
-              width: 400px;
+              width: 80%;
               height: 60px;
-              font-size: 40px
+              font-size: 40px;
               border-radius: 25px;
               border: 1px solid black;
               cursor: pointer;
@@ -71,6 +73,7 @@ const Index = class extends React.Component {
             }
             .fortune-box {
               font-size: 48px;
+              font-family: ${this.state.font};
               padding: 15px;
             }
             .wrapper {
