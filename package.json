@@ -31,8 +31,8 @@
     "crypto-shuffle": "1.0.1",
     "next": "8.0.3",
     "random-font": "1.0.0",
-    "react": "16.8.3",
-    "react-dom": "16.8.3"
+    "react": "16.8.4",
+    "react-dom": "16.8.4"
   },
   "devDependencies": {
     "ava": "1.3.1",
