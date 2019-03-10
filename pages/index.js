@@ -4,10 +4,11 @@ import shuffle from 'crypto-shuffle'
 import getRandomFont from 'random-font'
 import words from '../lib/words'
 import intros from '../lib/intros'
+import emojis from '../lib/emjois'
 function getWord () {
   const wordList = shuffle(words.slice(0))
   const introList = shuffle(intros.slice(0))
-  return `${introList[0]} ${wordList[0]}!`
+  return `${introList[0]} ${wordList[0]} ${emojis()}!`
 }
 
 const Index = class extends React.Component {
