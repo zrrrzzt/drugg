@@ -14,7 +14,7 @@
     "build": "next build && next export",
     "start": "next start",
     "now-build": "next build && next export",
-    "deploy": "npm test && now && now alias",
+    "deploy": "npm test && now --target production",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
