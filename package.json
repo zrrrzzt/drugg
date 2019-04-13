@@ -31,7 +31,7 @@
     "crypto-shuffle": "1.0.1",
     "next": "8.0.4",
     "random-font": "1.0.0",
-    "random-happy-emoji": "1.0.1",
+    "random-happy-emoji": "1.0.2",
     "react": "16.8.6",
     "react-dom": "16.8.6"
   },
