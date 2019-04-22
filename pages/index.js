@@ -47,7 +47,7 @@ const Index = class extends React.Component {
         </Head>
         <div className={'wrapper'}>
           <h1>Drugg gjør livet lysere!</h1>
-          <img src={'/static/drugg.jpg'} />
+          <img src={'/static/drugg.jpg'} alt='Profilbilde Eva Susanne' />
           <div className='fortune-box'>
             {this.state.word}
           </div>
