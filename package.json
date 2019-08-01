@@ -29,7 +29,7 @@
   "homepage": "https://github.com/zrrrzzt/drugg#readme",
   "dependencies": {
     "crypto-shuffle": "1.0.1",
-    "next": "9.0.2",
+    "next": "9.0.3",
     "next-offline": "4.0.2",
     "random-font": "1.0.0",
     "random-happy-emoji": "1.0.2",
