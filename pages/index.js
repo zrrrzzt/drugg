@@ -19,10 +19,10 @@ const Index = class extends React.Component {
       font: getRandomFont()
 
     }
-    this.deployHappiness = this.deployHappiness.bind(this)
+    this.handleDeployHappiness = this.handleDeployHappiness.bind(this)
   }
 
-  deployHappiness () {
+  handleDeployHappiness () {
     const word = getWord()
     const font = getRandomFont()
     this.setState({ word: word, font: font })
@@ -45,14 +45,14 @@ const Index = class extends React.Component {
           <meta name='description' content='Side som genererer tilfeldige ting Eva Susanne elsker.' />
           <title>Drugg gjør livet lysere!</title>
         </Head>
-        <div className={'wrapper'}>
+        <div className='wrapper'>
           <h1>Drugg gjør livet lysere!</h1>
-          <img src={'/static/drugg.jpg'} alt='Profilbilde Eva Susanne' />
+          <img src='/static/drugg.jpg' alt='Profilbilde Eva Susanne' />
           <div className='fortune-box'>
             {this.state.word}
           </div>
           <p>
-            <button onClick={this.deployHappiness}>Gi meg mer lys!</button>
+            <button onClick={this.handleDeployHappiness}>Gi meg mer lys!</button>
           </p>
           <style jsx global>
             {`
