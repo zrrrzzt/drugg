@@ -5,17 +5,14 @@ on:
 name: Test and Deploy on release
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - uses: actions/setup-node@v1
-    - name: Build and test
       with:
         node-version: '10.x'
     - run: npm install
     - run: npm test
-    - name: Deploy to ZEIT
       env:
         ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
       run: now --prod --token ${ZEIT_TOKEN}
