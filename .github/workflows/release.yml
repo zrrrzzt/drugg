@@ -13,6 +13,6 @@ jobs:
         node-version: 12
     - run: npm install
     - run: npm test
-    - run: now --prod --token ${ZEIT_TOKEN}
+    - run: now --confirm --prod --token ${ZEIT_TOKEN}
       env:
         ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
