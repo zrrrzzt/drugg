@@ -43,13 +43,13 @@ const Happiness = () => {
         <h1>Drugg gjør livet lysere!</h1>
         <img src='/static/drugg.jpg' alt='Profilbilde Eva Susanne' />
         <div className='fortune-box'>
-          { word }
+          {word}
         </div>
         <p>
-          <button onClick={ handleDeployHappiness }>Gi meg mer lys!</button>
+          <button onClick={handleDeployHappiness}>Gi meg mer lys!</button>
         </p>
         <div className='share-wrapper'>
-          <a href="/" className='share' onClick={ handleCopy } title='Del lyset fra Drugg'>🔗</a>
+          <a href='/' className='share' onClick={handleCopy} title='Del lyset fra Drugg'>🔗</a>
         </div>
         <style jsx global>
           {`
@@ -86,7 +86,7 @@ const Happiness = () => {
             }
           .fortune-box {
             font-size: 48px;
-            font-family: ${ font };
+            font-family: ${font};
             padding: 15px;
           }
           .wrapper {
