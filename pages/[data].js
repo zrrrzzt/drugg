@@ -56,6 +56,7 @@ const Happiness = () => {
           body {
               background-color: PaleVioletRed;
               padding: 20px;
+              font-family: ${font};
             }
             img {
               border-radius: 25px;
@@ -63,6 +64,7 @@ const Happiness = () => {
             button {
               width: 90%;
               height: 60px;
+              font-family: ${font};
               font-size: 30px;
               border-radius: 25px;
               border: 1px solid black;
@@ -86,7 +88,6 @@ const Happiness = () => {
             }
           .fortune-box {
             font-size: 48px;
-            font-family: ${font};
             padding: 15px;
           }
           .wrapper {
