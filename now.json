@@ -1,10 +1,6 @@
 {
   "version": 2,
-  "name": "drugg",
   "scope": "zrrrzzt",
-  "alias": [
-    "drugg.allthethings.win"
-  ],
   "env": {
     "NODE_ENV": "production"
   },
