@@ -30,7 +30,7 @@
   "dependencies": {
     "copy-text-to-clipboard": "2.2.0",
     "crypto-shuffle": "1.0.1",
-    "next": "9.4.4",
+    "next": "9.5.0",
     "next-offline": "5.0.2",
     "random-font": "2.0.2",
     "random-happy-emoji": "2.0.1",
