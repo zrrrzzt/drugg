@@ -34,8 +34,8 @@
     "next-offline": "5.0.3",
     "random-font": "2.0.4",
     "random-happy-emoji": "2.0.3",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-spring": "9.0.0",
     "toasted-notes": "3.2.0"
   },
